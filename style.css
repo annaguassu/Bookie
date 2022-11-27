@@ -1,182 +1,230 @@
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300);
-
-/*-----Carrosel-----*/
-.carousel{
-    margin-top: 4.5rem;
-    margin-bottom: 3rem;
+* {
+    --gradient-effect: linear-gradient(to left, #001f54, #56396f, #945a86, #cb819c, #fcaeb3);
+    --bg-color: #d8d8e0;
 }
 
-
-.plans {
-    font-family: "Yanone Kaffeesatz", sans-serif;
+body {
+    background-color: var(--bg-color);
 }
 
-a {
-    text-decoration: none;
-    color: white;
+body.dark {
+    --bg-color: #000;
 }
 
-.plans {
-    width: 938px;
-    position: absolute;
+/*..................navbar...................*/
 
-    left: 30px;
-    right: 0;
-    margin: auto;
+nav {
+    background-color: #fff;
 }
 
-.plans .card {
-    display: inline-block;
-    margin-right: 30px;
-    transform: scale(0);
-    width: 280px;
-    text-align: center;
-    position: relative;
-    transition: all 0.2s;
-    cursor: pointer;
-    opacity: 0.5;
-    box-shadow: 0px 17px 46px -10px #777777;
-    height: 15rem;
-    border-radius: 14px;
-}
-
-.plans .card:nth-of-type(1) {
-    -webkit-animation: intro 1s 0.1s forwards;
-    animation: intro 1s 0.1s forwards;
-}
-
-.plans .card:nth-of-type(2) {
-    -webkit-animation: intro 1s 0.2s forwards;
-    animation: intro 1s 0.2s forwards;
-}
-
-.plans .card:nth-of-type(3) {
-    -webkit-animation: intro 1s 0.3s forwards;
-    animation: intro 1s 0.3s forwards;
-}
-
-.plans .card:nth-of-type(1) {
-    background: -webkit-linear-gradient(45deg, #c96881 0%, #f7b695 100%);
-}
-
-.plans .card:nth-of-type(2) {
-    background: -webkit-linear-gradient(45deg, #6B6ECC 0%, #89BFDF 100%);
-}
-
-.plans .card:nth-of-type(3) {
-    background: -webkit-linear-gradient(45deg, #81B77B 0%, #A3E3C3 100%);
-}
-
-.plans .card:hover .card_inner__cta button {
-    transform: scale(1);
-}
-
-.plans .card:hover {
-    opacity: 1;
-}
-
-.plans .card_inner__content {
-    padding: 20px;
-}
-
-.plans .card_inner__content .price {
-    color: white;
-    font-weight: 800;
-    font-size: 1.5rem;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
-}
-
-.plans .card_inner__content .text {
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 100;
-    margin-top: 20px;
-    font-size: 13px;
-    line-height: 16px;
-}
-
-.plans .card_inner__content .title {
-    font-weight: 800;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.64);
-    margin-top: 40px;
-    font-size: 25px;
-    letter-spacing: 1px;
-}
-
-.plans .card_inner__cta {
-    position: absolute;
-    bottom: -24px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 200px;
-}
-
-.plans .card_inner__cta button {
-    padding: 16px;
-    box-shadow: 0px 0px 40px 4px #F76583, 0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
+/* ...................carousel...................*/
+.carousel {
+    height: 90vh;
     width: 100%;
-    background: -webkit-linear-gradient(-90deg, #fe5e7d 0%, #e5375b 100%);
-    border: none;
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    color: white;
-    outline: none;
-    font-size: 20px;
-    border-radius: 6px;
-    transform: scale(0.94);
-    cursor: pointer;
-    transition: box-shadow 0.3s, transform 0.3s 0.1s;
+    background: var(--gradient-effect);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: backgroundTransition 8s ease-in-out infinite;
 }
 
-.plans .card_inner__cta button span {
-    text-shadow: 0px 4px 18px #BA3F57;
+.custom-shape-divider-bottom-1669508591 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
-.plans .card_inner__cta button:hover {
-    box-shadow: 0px 0px 60px 8px #F76583, 0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
+.custom-shape-divider-bottom-1669508591 svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 164px;
 }
 
+.custom-shape-divider-bottom-1669508591 .shape-fill {
+    fill: var(--bg-color);
+}
 
-@-webkit-keyframes intro {
+@keyframes backgroundTransition {
     0% {
-        transform: scale(0);
-    }
-
-    25% {
-        transform: scale(1.06);
+        background-position: 0% 80%;
     }
 
     50% {
-        transform: scale(0.965);
-    }
-
-    75% {
-        transform: scale(1.02);
+        background-position: 80% 100%;
     }
 
     100% {
-        transform: scale(1);
+        background-position: 0% 90%;
     }
 }
 
-@keyframes intro {
-    0% {
-        transform: scale(0);
-    }
-
-    25% {
-        transform: scale(1.06);
-    }
-
-    50% {
-        transform: scale(0.965);
-    }
-
-    75% {
-        transform: scale(1.02);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+/* ...................como funciona?...................*/
+.title,
+.how {
+    text-align: center;
 }
+
+.how {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.card-glass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.53);
+    transition: 0.5s;
+    height: 60vh;
+    width: 90vw;
+    padding-bottom: 5rem;
+    margin-bottom: 8rem;
+    margin-top: 6rem;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.paragraph {
+    width: 70vw;
+}
+
+.wht {
+    margin-top: 3rem;
+}
+
+.como {
+    margin-top: 3rem;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 3rem;
+    flex-direction: row;
+
+}
+
+.step {}
+
+.butao {
+    margin-top: 4rem;
+    width: 10rem;
+}
+
+/*.................Plans.................*/
+
+.fundo {
+    padding: 0 25px 25px;
+    position: relative;
+    width: 100%;
+}
+
+.fundo::after {
+    content: '';
+    background: #60a9ff;
+    background: -moz-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+    background: -webkit-linear-gradient(top, #60a9ff 0%, #4394f4 100%);
+    background: linear-gradient(to bottom, #60a9ff 0%, #4394f4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#60a9ff', endColorstr='#4394f4', GradientType=0);
+    height: 350px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+@media (min-width: 900px) {
+    .background {
+      padding: 0 0 25px;
+    }
+    .planos {
+        flex-direction: row;
+      }
+
+      .plano{
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        flex-basis: 100%;
+        padding: 25px 50px;
+      }
+
+      .plano:last-child {
+        border-right: none;
+      }
+  }
+  
+
+  .containers {
+    margin: 0 auto;
+    padding: 50px 0 0;
+    max-width: 960px;
+    width: 100%;
+  }
+
+  .planos{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 15px 25px;
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .planos *{
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .plano{
+    border-bottom: 1px solid #e1f1ff;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .plano:last-child{
+    border-bottom: none;
+  }
+
+  .title-preco{
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .preco{
+    color: #016FF9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+  }
