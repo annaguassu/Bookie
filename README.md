@@ -9,4 +9,4 @@ Clube de assinatura de livros por curadoria.
 - Professor Fernando Graciano
 
 
-<a href="https://annaguassu.github.io/bookie/">Clique aqui para acompanhar o andamento!</a>
+<a href="https://annaguassu.github.io/Bookie/">Clique aqui para acompanhar o andamento!</a>
