@@ -162,33 +162,34 @@ nav {
 
 @media (min-width: 900px) {
     .background {
-      padding: 0 0 25px;
+        padding: 0 0 25px;
     }
+
     .planos {
         flex-direction: row;
-      }
+    }
 
-      .plano{
+    .plano {
         border-bottom: none;
         border-right: 1px solid #e1f1ff;
         flex-basis: 100%;
         padding: 25px 50px;
-      }
+    }
 
-      .plano:last-child {
+    .plano:last-child {
         border-right: none;
-      }
-  }
-  
+    }
+}
 
-  .containers {
+
+.containers {
     margin: 0 auto;
     padding: 50px 0 0;
     max-width: 960px;
     width: 100%;
-  }
+}
 
-  .planos{
+.planos {
     background-color: var(--bg-color);
     border-radius: 10px;
     padding: 15px 25px;
@@ -199,32 +200,55 @@ nav {
     box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
     display: flex;
     flex-direction: row;
-  }
+}
 
-  .planos *{
+.planos * {
     text-align: center;
     text-transform: uppercase;
-  }
+}
 
-  .plano{
+.plano {
     border-bottom: 1px solid #e1f1ff;
     padding: 25px;
     text-align: center;
-  }
+}
 
-  .plano:last-child{
+.plano:last-child {
     border-bottom: none;
-  }
+}
 
-  .title-preco{
+.title-preco {
     color: #888;
     font-weight: 600;
     letter-spacing: 1px;
-  }
+}
 
-  .preco{
+.preco {
     color: #016FF9;
     display: block;
     font-size: 32px;
     font-weight: 700;
-  }
+}
+
+/*...............login.............*/
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-glass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* From https://css.glass */
+    background: rgba(73, 172, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(73, 172, 255, 0.37);
+    height: 50vh;
+    width: 40vw;
+}
