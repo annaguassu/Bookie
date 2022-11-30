@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pagamento.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Pagamento</title>
+</head>
+
+<body>
+  <div class="container">
+    <form action="">
+      <div class="row">
+        <div class="col">
+          <h3 class="title">Pagamento</h3>
+          <div class="inputBox">
+            <span>Cartões aceitos:</span>
+            <img src="card_img.png">
+          </div>
+          <div class="inputBox">
+            <span>Nome do titular:</span>
+            <input type="text" placeholder="Maria Silva">
+          </div>
+          <div class="inputBox">
+            <span>Número:</span>
+            <input type="number" placeholder="1111 2222 3333 4444">
+          </div>
+          <div class="inputBox">
+            <span>Validade:</span>
+            <input type="date" placeholder="01/01/2000">
+          </div>
+          <div class="flex">
+            <div class="inputBox">
+              <span>Parcelas:</span>
+              <input type="number" placeholder="Selecione">
+            </div>
+            <div class="inputBox">
+              <span>CVV: </span>
+              <input type="number" placeholder="123">
+            </div>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="VOLTAR" class="submit-btn">
+      <input type="submit" value="AVANÇAR" class="submit-btn">
+    </form>
+  </div>
+  <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+
+</body>
+</html>
