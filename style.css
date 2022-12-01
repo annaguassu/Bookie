@@ -8,10 +8,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-  background-color: var(--bg-color);
-}
-
 body.dark {
   --bg-color: #000;
 }
@@ -100,8 +96,17 @@ nav {
 /* Slider */
 
 .costumer-logos{
-height: 20vh;
+height: 5vh;
 }
+
+.slide{
+  max-height: 5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
 .slick-slide {
     margin: 0px 20px;
 }
