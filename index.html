@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
   <script>
@@ -15,17 +17,21 @@
       document.documentElement.classList.remove('dark')
     }
   </script>
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <title>Bookie</title>
 </head>
 
 <body>
   <header>
-    <nav
-      class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 ">
       <div class="flex flex-wrap items-center justify-between mx-auto">
         <a href="index.html" class="flex items-center">
           <img src="img/horror.png" class="h-6 mr-3 sm:h-9" alt="Bookie Logo">
-          <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">BOO!kie</span>
+          <span class="logo self-center whitespace-nowrap dark:text-white">BOO!kie</span>
         </a>
         <div class="flex md:order-2">
           <button id="theme-toggle" type="button"
@@ -99,9 +105,19 @@
       </button>
     </div>
 
-    <section class="carousel">
-      <div class="glass-carousel">
-
+    <section class="carousel bg-white dark:bg-gray-900">
+      <div class="home-wrapper">
+        <div class="home-text">
+          <h1 class="home-title text-gray-900 dark:text-yellow-300" style="text-align:start;">
+            Entre nessa jornada literária, e receba livros que você realmente irá gostar.
+          </h1>
+          <button class="text-yellow-300 dark:text-white">
+            Eu quero!
+          </button>
+        </div>
+        <div class="home-img">
+          <img src="/img/livros.png">
+        </div>
       </div>
 
       <div class="custom-shape-divider-bottom-1669508591">
@@ -117,8 +133,28 @@
             class="shape-fill"></path>
         </svg>
       </div>
+
     </section>
+
+
+
+    <h2 class="title">O que você pode receber por aqui: </h2>
+    <section class="customer-logos slider">
+      <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+      </div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+      </div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+      </div>
+
+    </section>
+    </div>
     <section class="how">
+      
       <div class="card-glass">
         <div class="glass-wrapper">
           <div class="wht">
@@ -186,89 +222,6 @@
 
     </section>
     <section class="edicoes">
-      <div class="wrapper">
-
-        <!-- Nike 19 -->
-        <div class="card card--19">
-          <div class="card__header card__header--19">
-            <div class="card__watermark" data-watermark="Air"></div>
-
-            <img src="https://i.ibb.co/q7RKcZk/nike.png" alt="Nike" class="card__logo card__will-animate">
-
-            <span class="card__price card__will-animate">$120</span>
-
-            <h1 class="card__title card__will-animate">Air Structure 1</h1>
-            <span class="card__subtitle card__will-animate">From the Flymesh upper to the triple-density foam midsole,
-              the Nike Air Zoom Structure 19 Men's Running Shoe offers plenty of support and the response you need for a
-              smooth, stable ride that feels ultra fast.</span>
-
-          </div>
-
-          <div class="card__body">
-            <img src="https://i.ibb.co/R0Y8T8r/nike19.png" alt="Nike 19" class="card__image card__will-animate">
-            <div class="card__wish-list card__wish-list--19 card__will-animate">Wish List</div>
-
-            <span class="card__category card__will-animate">Men's running shoe</span>
-          </div>
-        </div>
-
-        <!-- Nike Solstice -->
-        <div class="card card--solstice">
-          <div class="card__header card__header--solstice">
-            <div class="card__watermark" data-watermark="Classic"></div>
-
-            <img src="https://i.ibb.co/q7RKcZk/nike.png" alt="Nike" class="card__logo card__will-animate">
-
-            <span class="card__price card__will-animate">$129</span>
-
-            <h1 class="card__title card__will-animate">Air Solstice QS</h1>
-            <span class="card__subtitle card__will-animate">The Nike Air Solstice draws inspiration from the swoosh's
-              classic running shoes of the 1980's updating the style with premium materials and impressive production
-              quality.</span>
-
-          </div>
-
-          <div class="card__body">
-            <img src="https://i.ibb.co/ZMVHp6x/nike-air-solstice.png" alt="Nike Solstice"
-              class="card__image card__will-animate">
-            <div class="card__wish-list card__wish-list--solstice card__will-animate">Wish List</div>
-
-            <span class="card__category card__will-animate">Men's shoe</span>
-          </div>
-        </div>
-
-        <!-- Nike Huarache -->
-        <div class="card card--huarache">
-          <div class="card__header card__header--huarache">
-            <div class="card__watermark" data-watermark="Safari"></div>
-
-            <img src="https://i.ibb.co/q7RKcZk/nike.png" alt="Nike" class="card__logo card__will-animate">
-
-            <span class="card__price card__will-animate">$140</span>
-
-            <h1 class="card__title card__will-animate">Air Huarache Utility</h1>
-            <span class="card__subtitle card__will-animate">The Nike Air Huarache Utility Men's Shoe toughens up a
-              famous running shoe with a nylon upper, fused mudguard and vibrant detail.</span>
-
-          </div>
-
-          <div class="card__body">
-            <img src="https://i.ibb.co/9bc3SYK/nike-safari.png" alt="Nike Huarache"
-              class="card__image card__will-animate">
-            <div class="card__wish-list card__wish-list--solstice card__will-animate">Wish List</div>
-
-            <span class="card__category card__will-animate">Men's shoe</span>
-          </div>
-        </div>
-
-      </div> <!-- /wrapper -->
-
-      <div class="cards-placeholder">
-        <div class="cards-placeholder__item"></div>
-        <div class="cards-placeholder__item"></div>
-        <div class="cards-placeholder__item"></div>
-      </div>
-
     </section>
 
     <section class="newsletter">
