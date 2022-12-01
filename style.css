@@ -629,3 +629,39 @@ height: 5vh;
 }
 
 
+/*...................Profile.................*/
+
+.sidebar{
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  margin-left: -1.5rem;
+  margin-top: -1rem;
+  padding-bottom: 3rem;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.profile-glass{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background: rgba(11, 64, 183, 0.31);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.4px);
+-webkit-backdrop-filter: blur(8.4px);
+border: 1px solid rgba(11, 64, 183, 0.04);
+margin-top: 4rem;
+height: 80vh;
+translate: -14rem;
+
+}
+
+.titulin{
+  font-family: 'Nerko One', cursive;
+}
