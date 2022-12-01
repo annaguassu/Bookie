@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --amarelo: #ffdb11;
+  --azul-esc: #001f54;
+  --rosa-bb: #F6aeb3;
+  --azul-clr: #087fb1;
+  --cinza: #d8d8e0;
+}

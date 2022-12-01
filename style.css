@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 * {
   --gradient-effect: linear-gradient(to left, #001f54, #56396f, #945a86, #cb819c, #fcaeb3);
@@ -366,6 +366,7 @@ height: 5vh;
 .planos * {
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Josefin Sans', cursive;
 }
 
 .plano {
