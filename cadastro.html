@@ -1,90 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compra</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="reset.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
 </head>
-
 <body>
-<nav style="height: 5rem;">
-    <ol class="sm:flex" style="padding: 0; justify-content: flex-start;">
-        <li class="relative mb-6 sm:mb-0" style="min-width: 15rem;">
-            <div class="flex items-center">
-                <div
-                    class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-yellow-300 shrink-0">
+    <nav style="height: 5rem;">
+        <ol class="sm:flex" style="padding: 0; justify-content: flex-start;">
+            <li class="relative mb-6 sm:mb-0" style="min-width: 15rem;">
+                <div class="flex items-center">
+                    <div
+                        class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-yellow-300 shrink-0">
+                    </div>
+                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                 </div>
-                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                <div class="mt-3 sm:pr-8">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-yellow-300">Formulário</h3>
+                </div>
+            </li>
+            <li class="relative mb-6 sm:mb-0" style="min-width: 15rem;">
+                <div class="flex items-center">
+                    <div
+                        class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+    
+                    </div>
+                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                </div>
+                <div class="mt-3 sm:pr-8">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Plano</h3>
+                </div>
+            </li>
+            <li class="relative mb-6 sm:mb-0" style="min-width: 15rem;">
+                <div class="flex items-center">
+                    <div
+                        class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+                    </div>
+                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                </div>
+                <div class="mt-3 sm:pr-8">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Cadastro</h3>
+                </div>
+            </li>
+            <li class="relative mb-6 sm:mb-0" style="min-width: 15rem;">
+                <div class="flex items-center">
+                    <div
+                        class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+    
+                    </div>
+                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                </div>
+                <div class="mt-3 sm:pr-8">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Endereço de Entrega</h3>
+                </div>
+            </li>
+            <li class="relative mb-6 sm:mb-0" style="min-width: 15rem;">
+                <div class="flex items-center">
+                    <div
+                        class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+    
+                    </div>
+                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                </div>
+                <div class="mt-3 sm:pr-8">
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Pagamento</h3>
+                </div>
+            </li>
+        </ol>
+    </nav>   
+        </nav>
+    </nav>   
+    
+    
+        <main id="container">
+            <div class="text">
+                <h1>Confirme os <br> seus dados <br> ao lado  <br> </h1>
             </div>
-            <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-yellow-300">Formulário</h3>
+            <div class="form">
+                <form action="#">
+
+                        <div class="form-campo">
+                            <label for="iemail"><strong>E-Mail</strong></label>
+                            <input class="input-text" type="email" name="email" id="iemail" required placeholder="brendasantos@gmail.com">
+                        </div>
+
+                        <div class="form-campo">
+                            <label for="iname"><strong>Nome Completo</strong></label>
+                            <input class="input-text" type="text" name="name" id="iname" required placeholder="Brenda Santos">
+                        </div>
+
+                    <fieldset class="grupo">
+                        <div class="form-campo">
+                            <label for="icpf"><strong>CPF</strong></label>
+                            <input class="input-grupo" type="text" name="cpf" id="icpf" maxlength="11" required placeholder="10020030040">
+                        </div>
+                        <div class="form-campo">
+                            <label for="itel"><strong>Telefone</strong></label>
+                            <input class="input-grupo" type="tel" name="tel" id="itel" required placeholder="(16) 911223344">
+                        </div>
+                    </fieldset>
+
+                    <div class="botao">
+                        
+                           
+                             <button class="form-botao" type="submit">Voltar</button>
+                           
+                             <button class="form-botao" type="submit">Avançar</button>
+
+                            
+                    </div>
+
+                    <div class="botao-ajuda">
+                    <button type="submit">?Ajuda</button>
+                </div>
+    
+                </form>
+               
             </div>
-        </li>
-        <li class="relative mb-6 sm:mb-0" style="min-width: 15rem;">
-            <div class="flex items-center">
-                <div
-                    class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-yellow-300 shrink-0">
+
+                <div class="plano-form">
+
+                    <div class="cabecalho-icon">
+                        <img src="./pictures/horror.png" alt="Logo Horror">
+                        <h2>Plano Anual</h2>
+                    </div>
+
+                    <div class="pacote">
+                        <p>Pacote Halloween: Outubro/2022</p>
+                        <img src="./pictures/boxH.png" alt="Imagem Tema">
+                    </div>
+
+                    <div class="taxa-frete">
+                        <fieldset>
+                            <legend>Taxa de Frete</legend>
+                            
+                            <label for="icep">CEP</label>
+                            <input type="text" name="cep" id="icep">
+                            <button type="submit">Calcular</button>
+
+                        </fieldset>
+                        <div id="cupom">
+                            <h3>Cupom</h3>
+                            <p>BOOKIEEXPERIMENTE</p>
+                        </div>
+
+                    </div>
+
+                    <div id="total">
+                        <!-- Aqui entra a function calcular (JavaScript) -->
+                    </div>
 
                 </div>
-                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-            </div>
-            <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Plano</h3>
-            </div>
-        </li>
-        <li class="relative mb-6 sm:mb-0" style="min-width: 15rem;">
-            <div class="flex items-center">
-                <div
-                    class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                </div>
-                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-            </div>
-            <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Cadastro</h3>
-            </div>
-        </li>
-        <li class="relative mb-6 sm:mb-0" style="min-width: 15rem;">
-            <div class="flex items-center">
-                <div
-                    class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
 
-                </div>
-                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-            </div>
-            <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Endereço de Entrega</h3>
-            </div>
-        </li>
-        <li class="relative mb-6 sm:mb-0" style="min-width: 15rem;">
-            <div class="flex items-center">
-                <div
-                    class="flex z-10 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+        </main>
 
-                </div>
-                <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-            </div>
-            <div class="mt-3 sm:pr-8">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Pagamento</h3>
-            </div>
-        </li>
-    </ol>
-</nav>
-    <main id="container">
+<footer>
 
-    </main>
-
-    <footer>
-
-    </footer>
+</footer>
 
     <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
-
 </body>
-
 </html>
