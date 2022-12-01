@@ -1,13 +1,6 @@
 @charset "UTF-8";
 @import url('/styles/reset.css');
 
-<<<<<<< HEAD
-=======
-body {
-  background-color: lightgray;
-}
-
->>>>>>> 92f144bc02f39d88c36a4dc96c2347fcf05d8340
 nav {
   background-color: var(--azul-esc);
   display: flex;
@@ -133,43 +126,4 @@ fieldset.grupo .form-campo {
   height: 15vh;
   width: 100%;
   background-color: #242323;
-<<<<<<< HEAD
- }
- 
-
-/*Pagina de finalização*/
-
- body {
-  text-align: center;
-  padding: 40px 0;
 }
-  h1 {
-    color: #88B04B;
-    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-    font-weight: 900;
-    font-size: 40px;
-    margin-bottom: 10px;
-  }
-  p {
-    color: #404F5E;
-    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-    font-size:20px;
-    margin: 0;
-  }
-i {
-  color: #9ABC66;
-  font-size: 100px;
-  line-height: 200px;
-  margin-left:-15px;
-}
-.card {
-  background: white;
-  padding: 60px;
-  border-radius: 4px;
-  box-shadow: 0 2px 3px #ffffff;
-  display: inline-block;
-  margin: 0 auto;
-}
-=======
- }
->>>>>>> 92f144bc02f39d88c36a4dc96c2347fcf05d8340
