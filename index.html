@@ -20,7 +20,7 @@
   <script src="main.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <title>Bookie</title>
+  <title>Bookie</title>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
             </svg>
           </button>
           <button type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             <a></a>Experimente!
           </button>
           <button data-collapse-toggle="navbar-sticky" type="button"
@@ -65,7 +65,7 @@
           <ul
             class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="#"
+              <a href="form.html"
                 class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-yellow-300"
                 aria-current="page">Faça o teste e receba livros que são a sua cara!</a>
             </li>
@@ -79,26 +79,14 @@
     </nav>
   </header>
   <main>
-    <div data-dial-init class="help-button fixed bottom-6 right-24 group">
-      <div id="speed-dial-menu-text-inside-button" class="flex hidden flex-col items-center mb-4 space-y-2">
-        <button type="button"
-          class="w-[56px] h-[56px] text-gray-500 bg-white rounded-full border border-gray-200 dark:border-gray-600 hover:text-gray-900 shadow-sm dark:hover:text-white dark:text-gray-400 hover:bg-gray-50 dark:bg-gray-700 dark:hover:bg-gray-600 focus:ring-4 focus:ring-gray-300 focus:outline-none dark:focus:ring-gray-400">
-          <svg aria-hidden="true" class="mx-auto mt-px w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 9a2 2 0 012-2h6a2 2 0 012 2v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9z"></path>
-            <path d="M5 3a2 2 0 00-2 2v6a2 2 0 002 2V5h8a2 2 0 00-2-2H5z"></path>
-          </svg>
-          <a href="form.html">
-            <span class="block mb-px text-xs font-medium">Ajuda</span>
-          </a>
-        </button>
-      </div>
+    <div data-dial-init class="help-button fixed bottom-2 right-24 group">
       <button type="button" data-dial-toggle="speed-dial-menu-text-inside-button"
         aria-controls="speed-dial-menu-text-inside-button" aria-expanded="false"
         class="flex justify-center items-center w-14 h-14 text-white bg-blue-700 rounded-full hover:bg-blue-800 dark:bg-blue-600 dark:hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:focus:ring-blue-800">
-        <svg aria-hidden="true" class="w-8 h-8 transition-transform group-hover:rotate-45" fill="none"
-          stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+            d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <span class="sr-only">Open actions menu</span>
       </button>
@@ -190,31 +178,37 @@
         <div class="containers">
           <div class="planos">
             <div class="plano">
-              <h2 class="title-preco">Plano Experimental</h2>
+              <h2 class=" text-2xl text-purple-800 title-preco">Plano Experimental</h2>
               <p>Ainda não tem certeza? Aproveite a experiência recebendo 1 livro de acordo com a sua
                 personalidade!!</p>
               <span class="preco">
                 R$29,90
               </span>
-              <a href="" class="try">Quero esse</a>
+              <button
+                class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Quero
+                Esse!</button>
             </div>
             <div class="plano">
-              <h2 class="title-preco">Plano Mensal</h2>
+              <h2 class="text-2xl text-purple-800 title-preco">Plano <br>Mensal</h2>
               <p>Ainda não tem certeza? Aproveite a experiência recebendo 1 livro de acordo com a sua
                 personalidade!!</p>
               <span class="preco">
                 R$64,90
               </span>
-              <a href="" class="try">Quero esse</a>
+              <button
+                class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Quero
+                Esse!</button>
             </div>
             <div class="plano">
-              <h2 class="title-preco">Plano Anual</h2>
+              <h2 class="text-2xl text-purple-800 title-preco">Plano <br>Anual</h2>
               <p>Ainda não tem certeza? Aproveite a experiência recebendo 1 livro de acordo com a sua
                 personalidade!!</p>
               <span class="preco">
                 R$54,90
               </span>
-              <a href="" class="try">Quero esse</a>
+              <button href="form.html"
+                class="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Quero
+                Esse!</button>
             </div>
           </div>
         </div>
@@ -233,8 +227,8 @@
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <a href="https://flowbite.com/" class="flex items-center">
-          <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          <img src="/img/horror.png" class="mr-3 h-8" alt="FlowBite Logo" />
+          <span class="titulin self-center text-2xl font-semibold whitespace-nowrap dark:text-white">BOO!kie</span>
         </a>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-11 sm:grid-cols-5">
@@ -265,7 +259,7 @@
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/"
-          class="hover:underline">Flowbite™</a>. Todos os direitos reservados.
+          class="hover:underline">BOO!kie™</a>. Todos os direitos reservados.
       </span>
       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
         <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">

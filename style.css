@@ -294,7 +294,9 @@ height: 5vh;
 }
 
 /*.................Plans.................*/
-
+.bg-purple-700{
+  z-index: 100;
+}
 .fundo {
   margin-top: 5rem;
   padding: 0 25px 25px;
@@ -305,10 +307,9 @@ height: 5vh;
 
 .fundo::after {
   content: '';
-  background: #FCE96A;
-  background: -moz-linear-gradient(to left, #001f54, #56396f, #945a86, #cb819c, #fcaeb3);
-  background: -webkit-linear-gradient(to left, #001f54, #56396f, #945a86, #cb819c, #fcaeb3);
-  background: linear-gradient(to left, #001f54, #56396f, #945a86, #cb819c, #fcaeb3);
+  background: #012381;
+  background: -webkit-linear-gradient(to right, #170274, #188dfc);
+  background: linear-gradient(to right, #170274, #188dfc);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#60a9ff', endColorstr='#4394f4', GradientType=0);
   height: 350px;
   left: 0;
@@ -383,9 +384,12 @@ height: 5vh;
   color: #888;
   font-weight: 600;
   letter-spacing: 1px;
+  margin-bottom: 3rem;
 }
 
 .preco {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   color: #016FF9;
   display: block;
   font-size: 32px;
