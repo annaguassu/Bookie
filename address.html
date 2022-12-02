@@ -87,6 +87,86 @@
     </ol>
   </nav>
   <main id="container">
+    <div class="text">
+      <h1>Confirme os <br> seus dados <br> ao lado <br> </h1>
+    </div>
+    <div class="form">
+      <form action="#">
+
+        <div class="form-campo">
+          <label for="iemail"><strong>Rua</strong></label>
+          <input class="input-text" type="text" name="text" id="text" required placeholder="Rua Manuel Oliveira">
+        </div>
+        <div class="form-campo">
+          <label for="iname"><strong>Bairro</strong></label>
+          <input class="input-text" type="text" name="text" id="text" required placeholder="Vila Rocca">
+        </div>
+        <div class="form-campo">
+          <label for="iemail"><strong>Cidade</strong></label>
+          <input class="input-text" type="text" name="text" id="text" required placeholder="Campo Grande">
+        </div>
+        <fieldset class="grupo">
+          <div class="form-campo">
+            <label for="text"><strong>CEP</strong></label>
+            <input class="input-grupo" type="text" name="text" id="text" required placeholder="79002-000">
+          </div>
+          <div class="form-campo">
+            <label for="itel"><strong>Número</strong></label>
+            <input class="input-grupo" type="tel" name="tel" id="itel" required placeholder="10">
+          </div>
+        </fieldset>
+
+        <div class="botao">
+
+
+          <button class="form-botao" type="submit">Voltar</button>
+
+          <button class="form-botao" type="submit">Avançar</button>
+
+
+        </div>
+
+        <div class="botao-ajuda">
+          <button type="submit">?Ajuda</button>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="plano-form">
+
+      <div class="cabecalho-icon">
+        <img src="./img/horror.png" alt="Logo Horror">
+        <h2>Plano Anual</h2>
+      </div>
+
+      <div class="pacote">
+        <p>Pacote Halloween: Outubro/2022</p>
+        <img src="./img/boxH.png" alt="Imagem Tema">
+      </div>
+
+      <div class="taxa-frete">
+        <fieldset>
+          <legend>Taxa de Frete</legend>
+
+          <label for="icep">CEP</label>
+          <input type="text" name="cep" id="icep">
+          <button type="submit">Calcular</button>
+
+        </fieldset>
+        <div id="cupom">
+          <h3>Cupom</h3>
+          <p>BOOKIEEXPERIMENTE</p>
+        </div>
+
+      </div>
+
+      <div id="total">
+        <!-- Aqui entra a function calcular (JavaScript) -->
+      </div>
+
+    </div>
 
   </main>
 
